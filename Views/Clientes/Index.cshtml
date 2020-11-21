@@ -1,0 +1,50 @@
+@model Models.Clientes
+
+@{
+    ViewData["Title"] = "Clientes";
+}
+
+<div asp-validation-summary="All"></div>
+
+<div class="text-center">
+    <h1 class="display-4">Formulario Clientes</h1><br>
+
+    <form  asp-controller="Clientes" asp-action="Crear">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+        <div class="form-group text-left">
+            <label asp-for="razonsocial"></label>
+            <input asp-for="razonsocial" name="" class="form-control"> 
+            <span asp-validation-for="razonsocial" class="text-danger"></span>
+        </div><br>
+
+        <div class="form-group text-left">
+            <label asp-for="dni"></label>
+            <input asp-for="dni" name="" class="form-control"> 
+            <span asp-validation-for="dni" class="text-danger"></span>
+        </div><br>
+
+        <div class="form-group text-left">
+            <label asp-for="direccion"></label>
+            <input asp-for="direccion" name="" class="form-control"> 
+            <span asp-validation-for="direccion" class="text-danger"></span>
+        </div><br>
+
+        <div class="form-group text-left">
+            <label asp-for="telefono"></label>
+            <input asp-for="telefono" name="" class="form-control"> 
+            <span asp-validation-for="telefono" class="text-danger"></span>
+        </div><br>
+        
+        <div class="form-group text-left">
+            <label asp-for="correo"></label>
+            <input asp-for="correo" name="" class="form-control"> 
+            <span asp-validation-for="correo" class="text-danger"></span>
+        </div><br>
+        <div class="form-group">
+            <button class="btn btn-primary">Enviar</button>
+        </div><br>
+    </form>
+    <td>@Html.DisplayTextFor(model => model.respuesta)</td>  
+
+</div>
