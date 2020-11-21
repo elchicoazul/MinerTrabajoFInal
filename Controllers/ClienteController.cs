@@ -7,17 +7,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MinerTrabajoFInal.Data;
 using MinerTrabajoFInal.Models;
-using Models;
 
 namespace MinerTrabajoFInal.Controllers
 {
-    public class ClientesController : Controller
+    public class ClienteController : Controller
     {
-        private readonly ILogger<ClientesController> _logger;
+        private readonly ILogger<ClienteController> _logger;
         private readonly ApplicationDbContext _context;
 
 
-        public ClientesController(ILogger<ClientesController> logger)
+        public ClienteController(ILogger<ClienteController> logger)
         {
             _logger = logger;
         }
@@ -28,7 +27,7 @@ namespace MinerTrabajoFInal.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear(Clientes objClientes)
+        public IActionResult Crear(Cliente objClientes)
         {
             if (ModelState.IsValid)
             {

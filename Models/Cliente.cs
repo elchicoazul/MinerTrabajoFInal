@@ -2,10 +2,10 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Models
+namespace MinerTrabajoFInal.Models
 {
     [Table("clientes")]    
-    public class Clientes
+    public class Cliente
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]

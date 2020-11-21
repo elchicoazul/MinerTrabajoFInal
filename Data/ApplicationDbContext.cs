@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using MinerTrabajoFInal.Models;
 
 namespace MinerTrabajoFInal.Data
 {
@@ -12,5 +13,8 @@ namespace MinerTrabajoFInal.Data
             : base(options)
         {
         }
+
+        public DbSet<MinerTrabajoFInal.Models.Cliente> Clientes { get; set; }
+
     }
 }

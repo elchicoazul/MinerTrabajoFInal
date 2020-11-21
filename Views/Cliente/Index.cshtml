@@ -1,4 +1,4 @@
-@model Models.Clientes
+@model MinerTrabajoFInal.Models.Cliente
 
 @{
     ViewData["Title"] = "Clientes";
@@ -9,7 +9,7 @@
 <div class="text-center">
     <h1 class="display-4">Formulario Clientes</h1><br>
 
-    <form  asp-controller="Clientes" asp-action="Crear">
+    <form  asp-controller="Cliente" asp-action="Crear">
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
         <div class="form-group text-left">
