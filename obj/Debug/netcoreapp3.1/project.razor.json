@@ -14392,6 +14392,7 @@
   "RootNamespace": "MinerTrabajoFInal",
   "Documents": [
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Cliente\\Confirmacion.cshtml",
       "TargetPath": "Views\\Cliente\\Confirmacion.cshtml",
       "FileKind": "mvc"
@@ -14419,6 +14420,30 @@
     {
       "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+=======
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Clientes\\Index.cshtml",
+      "TargetPath": "Views\\Clientes\\Index.cshtml",
+>>>>>>> 1cf1f8107e8f79bee2182b6e7b81e6bab3627aa4
       "FileKind": "mvc"
     },
     {
@@ -14432,6 +14457,7 @@
       "FileKind": "mvc"
     },
     {
+<<<<<<< HEAD
       "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Cliente\\Index.cshtml",
       "TargetPath": "Views\\Cliente\\Index.cshtml",
       "FileKind": "mvc"
@@ -14447,6 +14473,18 @@
       "FileKind": "mvc"
     },
     {
+=======
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+>>>>>>> 1cf1f8107e8f79bee2182b6e7b81e6bab3627aa4
       "FilePath": "c:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

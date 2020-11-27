@@ -194,8 +194,13 @@ C:\Users\PC_\Desktop\usmp\2020 - 2\programacion 1\MinerTrabajoFInal\obj\Debug\ne
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+<<<<<<< HEAD
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\app.db
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\MinerTrabajoFInal.StaticWebAssets.xml
+=======
+C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\MinerTrabajoFInal.StaticWebAssets.xml
+C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\app.db
+>>>>>>> 1cf1f8107e8f79bee2182b6e7b81e6bab3627aa4
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\MinerTrabajoFInal.exe
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\MinerTrabajoFInal.deps.json
 C:\Users\PC_\Desktop\MinerTrabajoFInal\bin\Debug\netcoreapp3.1\MinerTrabajoFInal.runtimeconfig.json
@@ -270,10 +275,16 @@ C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.TagHelpers.output.cache
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.RazorCoreGenerate.cache
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+<<<<<<< HEAD
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Index.cshtml.g.cs
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Recepcion\recepcion.cshtml.g.cs
+=======
+C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Clientes\Index.cshtml.g.cs
+C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+>>>>>>> 1cf1f8107e8f79bee2182b6e7b81e6bab3627aa4
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
@@ -289,4 +300,7 @@ C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\staticwebassets\M
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.dll
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.pdb
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.genruntimeconfig.cache
+<<<<<<< HEAD
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Confirmacion.cshtml.g.cs
+=======
+>>>>>>> 1cf1f8107e8f79bee2182b6e7b81e6bab3627aa4
