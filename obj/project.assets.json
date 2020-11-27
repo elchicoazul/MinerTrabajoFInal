@@ -1697,11 +1697,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC_\\Desktop\\usmp\\2020 - 2\\programacion 1\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "projectUniqueName": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
       "projectName": "MinerTrabajoFInal",
-      "projectPath": "C:\\Users\\PC_\\Desktop\\usmp\\2020 - 2\\programacion 1\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "projectPath": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
       "packagesPath": "C:\\Users\\PC_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC_\\Desktop\\usmp\\2020 - 2\\programacion 1\\MinerTrabajoFInal\\obj\\",
+      "outputPath": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\PC_\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1716,7 +1716,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -1728,7 +1727,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
@@ -1775,7 +1773,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
