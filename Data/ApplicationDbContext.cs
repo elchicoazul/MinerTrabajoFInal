@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using MinerTrabajoFInal.Models;
-
 namespace MinerTrabajoFInal.Data
 {
     public class ApplicationDbContext : IdentityDbContext

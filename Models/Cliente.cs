@@ -36,8 +36,5 @@ namespace MinerTrabajoFInal.Models
         [Column("correo")]
         [EmailAddress]
         public string correo { get; set; }
-
-        [NotMapped]
-        public string respuesta { get; set; }
     }
 }

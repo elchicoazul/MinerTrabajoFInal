@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QjmvOo7DOZJrom6gJaZh/6FxVUAksQTFlrBxJtju4vaMWR9y5anmPIbBK2wYK1XU2N5RFbfH6SVlSBLeoJaRNQ==",
+  "dgSpecHash": "XhDrUG3sxBPRFFRQmmgcCnu9+9pfK+8MEXyuBaalTrkQy38OppA2FHLJY6AxBtB5Q93tOo8czCuHPsMen+pSvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC_\\Desktop\\usmp\\2020 - 2\\programacion 1\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+  "projectFilePath": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC_\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.8\\microsoft.aspnetcore.cryptography.internal.3.1.8.nupkg.sha512",
     "C:\\Users\\PC_\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.8\\microsoft.aspnetcore.cryptography.keyderivation.3.1.8.nupkg.sha512",
