@@ -1,5 +1,5 @@
 {
-  "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+  "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,63 +14392,63 @@
   "RootNamespace": "MinerTrabajoFInal",
   "Documents": [
     {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Home\\Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Recepcion\\recepcion.cshtml",
-      "TargetPath": "Views\\Recepcion\\recepcion.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Cliente\\Index.cshtml",
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Cliente\\Index.cshtml",
       "TargetPath": "Views\\Cliente\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Resultado\\Index.cshtml",
-      "TargetPath": "Views\\Resultado\\Index.cshtml",
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "e:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\Views\\Shared\\_LoginPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Recepcion\\recepcion.cshtml",
+      "TargetPath": "Views\\Recepcion\\recepcion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Resultado\\Index.cshtml",
+      "TargetPath": "Views\\Resultado\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Home\\Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

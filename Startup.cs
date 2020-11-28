@@ -13,8 +13,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-using Npgsql.EntityFrameworkCore.PostgreSQL;
-
 namespace MinerTrabajoFInal
 {
     public class Startup
