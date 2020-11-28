@@ -14,31 +14,17 @@ namespace MinerTrabajoFInal.Controllers
     {
         private readonly ILogger<ResultadoController> _logger;
         private readonly ApplicationDbContext _context;
-
-
-        public ClienteController(ILogger<ResultadoController> logger, ApplicationDbContext context )
+        public ResultadoController(ILogger<ResultadoController> logger, ApplicationDbContext context)
         {
-            _logger = logger;
-            _context = context;
+            _logger=logger;
+            _context=context;
         }
 
         public IActionResult Index()
         {
-            //var contactos = _context.Contactos.Where(x => x.Mensaje != null).ToList();
-            var resultado=_context.resultado().ToList();
+            var resultado=_context.Resultado.ToList();
             return View(resultado);
         }
-        //borrar
-        [HttpPost]
-        public IActionResult Crear(Cliente objClientes)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(objClientes);
-                _context.SaveChanges();
-                objClientes.respuesta = "Registro exitoso my friend!";
-            }
-            return View(objClientes);
-        }
+ 
     }
 }

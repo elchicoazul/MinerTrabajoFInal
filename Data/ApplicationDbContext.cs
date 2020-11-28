@@ -13,7 +13,7 @@ namespace MinerTrabajoFInal.Data
             : base(options)
         {
         }
-
+        //public DbSet<Contacto> Contactos { get; set; }
         public DbSet<MinerTrabajoFInal.Models.Cliente> Clientes { get; set; }
         
         public DbSet<MinerTrabajoFInal.Models.Resultado> Resultado { get; set; }        

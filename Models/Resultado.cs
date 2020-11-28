@@ -9,19 +9,19 @@ namespace MinerTrabajoFInal.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Column("id")]
-        public string Id  { get; set; }
+        public int Id  { get; set; }
         [Column("idcliente")]
-        public string idcliente { get; set; }
+        public int idcliente { get; set; }
         [Column("numerorecpcion")]
-        public string numerorecpcion { get; set; }
+        public int numerorecpcion { get; set; }
         [Column("tipo_analisis")]
         public string tipo_analisis  { get; set; }        
         [Column("muestra")]
         public string muestra  { get; set; }
         [Column("precio")]
-        public string precio  { get; set; }
+        public double precio  { get; set; }
         [Column("cantidad")]
-        public string cantidad  { get; set; }
+        public int cantidad  { get; set; }
         [Column("valor")]
         public string valor  { get; set; } 
     }

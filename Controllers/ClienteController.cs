@@ -15,9 +15,9 @@ namespace MinerTrabajoFInal.Controllers
         private readonly ILogger<ClienteController> _logger;
         private readonly ApplicationDbContext _context;
 
-
-        public ClienteController(ILogger<ClienteController> logger)
+        public ClienteController(ILogger<ClienteController> logger, ApplicationDbContext context)
         {
+            _context = context;
             _logger = logger;
         }
 
@@ -33,9 +33,15 @@ namespace MinerTrabajoFInal.Controllers
             {
                 _context.Add(objClientes);
                 _context.SaveChanges();
-                objClientes.respuesta = "Registro exitoso my friend!";
+                return RedirectToAction("Confirmacion");
+
             }
-            return View(objClientes);
+            return View("index",objClientes);
+        }
+
+        public IActionResult Confirmacion()
+        {
+            return View();
         }
     }
 }

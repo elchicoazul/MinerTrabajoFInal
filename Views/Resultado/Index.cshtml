@@ -1,0 +1,26 @@
+@model IEnumerable<MinerTrabajoFInal.Models.Resultado>
+@{
+    ViewData["Title"] = "Resultado";
+}
+
+<h1><center>RESULTADO</center></h1>
+ <table class="table">
+    
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">N°</th>
+      <th scope="col">CLIENTE</th>
+      <th scope="col">TIPO DE ANALISIS</th>
+      <th scope="col">RESULTADO</th>
+    </tr>
+  </thead>
+  } @foreach (var result in Model) 
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => result.numerorecpcion)</td>
+                <td>@Html.DisplayFor(modelItem => result.idcliente)</td>
+                <td>@Html.DisplayFor(modelItem => result.tipo_analisis)</td>
+                <td>@Html.DisplayFor(modelItem => result.valor)</td>                
+            </tr>
+        }
+</table>
