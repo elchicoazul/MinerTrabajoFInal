@@ -1692,26 +1692,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC_\\.nuget\\packages\\": {}
+    "C:\\Users\\Servidor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "projectUniqueName": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
       "projectName": "MinerTrabajoFInal",
-      "projectPath": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
-      "packagesPath": "C:\\Users\\PC_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC_\\Desktop\\MinerTrabajoFInal\\obj\\",
+      "projectPath": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "packagesPath": "C:\\Users\\Servidor\\.nuget\\packages\\",
+      "outputPath": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\PC_\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Servidor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1773,7 +1771,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
