@@ -1,45 +1,62 @@
-@model MinerTrabajoFInal.Models.Cliente
+@model IEnumerable<MinerTrabajoFInal.Models.Cliente>
 
-@{
-    ViewData["Title"] = "Clientes";
-}
+<h2>Registros</h2><br>
 
-<div asp-validation-summary="All"></div>
+<p>
+    <a asp-action="Crear">Registrar</a>
+</p><br>
 
-<div class="text-center">
-    <h1 class="display-4">Formulario Clientes</h1><br>
+<table class="table table-hover">
+    <thead class="thead-dark">
+        <tr>
+                <th scope="col">
+                    #
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.razonsocial)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.dni)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.direccion)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.telefono)
+                </th>
+                <th scope="col">
+                    @Html.DisplayNameFor(model => model.correo)
+                </th>
+        </tr>
+    </thead>
 
-    <form  asp-controller="Cliente" asp-action="Crear">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <tbody>
 
-        <div class="form-group text-left">
-            <label asp-for="razonsocial"></label>
-            <input asp-for="razonsocial" > 
-        </div><br>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th scope="row">
+                <a asp-action="Editar" asp-route-id="@item.id">Editar</a> |
+                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+            </th>
+            <td>
+                @Html.DisplayFor(modelItem => item.razonsocial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dni)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.correo)
+            </td>
+        </tr>
+    }        
+    </tbody> 
 
-        <div class="form-group text-left">
-            <label asp-for="dni"></label>
-            <input asp-for="dni" > 
-        </div><br>
-
-        <div class="form-group text-left">
-            <label asp-for="direccion"></label>
-            <input asp-for="direccion" > 
-        </div><br>
-
-        <div class="form-group text-left">
-            <label asp-for="telefono"></label>
-            <input asp-for="telefono" > 
-        </div><br>
-        
-        <div class="form-group text-left">
-            <label asp-for="correo"></label>
-            <input asp-for="correo" > 
-        </div><br>
-
-        <div class="form-group">
-            <button class="btn btn-primary">Enviar</button>
-        </div><br>
-    </form>
-
-</div>
+    
+</table>
