@@ -22,8 +22,9 @@ namespace MinerTrabajoFInal.Controllers
 
         public IActionResult Index()
         {
-            var resultado=_context.Resultado.ToList();
-            return View(resultado);
+            //var resultado=_context.Resultado.ToList();
+            //return View(resultado);
+            return View();
         }
  
     }
