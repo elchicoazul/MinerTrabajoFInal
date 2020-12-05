@@ -397,3 +397,9 @@ E:\rony_usmp\ProyectoFinal\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\staticwebas
 E:\rony_usmp\ProyectoFinal\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.dll
 E:\rony_usmp\ProyectoFinal\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.pdb
 E:\rony_usmp\ProyectoFinal\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.genruntimeconfig.cache
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Confirmacion.cshtml.g.cs
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Crear.cshtml.g.cs
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Editar.cshtml.g.cs
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Cliente\Index.cshtml.g.cs
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Recepcion\recepcion.cshtml.g.cs
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Resultado\Index.cshtml.g.cs
