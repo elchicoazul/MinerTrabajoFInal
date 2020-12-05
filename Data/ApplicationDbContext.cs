@@ -15,6 +15,7 @@ namespace MinerTrabajoFInal.Data
         public DbSet<MinerTrabajoFInal.Models.Cliente> Clientes { get; set; }
 
         public DbSet<MinerTrabajoFInal.Models.Resultado> Resultado { get; set; } 
+        // public DbSet<MinerTrabajoFInal.Models.Recepcion> Recepcion { get; set; }
 
     }
 }
