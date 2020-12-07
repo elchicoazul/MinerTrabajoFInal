@@ -14407,11 +14407,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Recepcion\\Validar.cshtml",
-      "TargetPath": "Views\\Recepcion\\Validar.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Cliente\\Editar.cshtml",
       "TargetPath": "Views\\Cliente\\Editar.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14429,11 @@
     {
       "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Cliente\\Confirmacion.cshtml",
       "TargetPath": "Views\\Cliente\\Confirmacion.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\git\\Trabajo  Final\\MinerTrabajoFInal\\Views\\Recepcion\\Confirmacion.cshtml",
+      "TargetPath": "Views\\Recepcion\\Confirmacion.cshtml",
       "FileKind": "mvc"
     },
     {

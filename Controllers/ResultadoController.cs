@@ -22,10 +22,19 @@ namespace MinerTrabajoFInal.Controllers
 
         public IActionResult Index()
         {
-            //var resultado=_context.Resultado.ToList();
-            //return View(resultado);
-            return View();
+            var resultado=_context.Resultado.ToList();
+            return View(resultado);
+            //return View();
+           
         }
- 
+        [HttpPost]        
+        public IActionResult Buscar(int valor)
+        {
+            var resultado=_context.Resultado.Where(x=>x.numerorecpcion==valor).ToList();
+            //var contactos = _context.Contactos.Where(x => x.Mensaje != null).ToList();
+            return View("index",resultado);
+            //return View();
+        }
+        
     }
 }

@@ -84,7 +84,6 @@ D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Clie
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Recepcion\Index.cshtml.g.cs
-D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Recepcion\Validar.cshtml.g.cs
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Resultado\Index.cshtml.g.cs
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -101,3 +100,4 @@ D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\staticwebassets\
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.dll
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.pdb
 D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.genruntimeconfig.cache
+D:\git\Trabajo  Final\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Recepcion\Confirmacion.cshtml.g.cs
