@@ -35,15 +35,10 @@ namespace MinerTrabajoFInal.Controllers
             {
                 _context.Add(objCliente);
                 _context.SaveChanges();
-                return RedirectToAction("Confirmacion");
+                return RedirectToAction("Index");
 
             }
             return View("Crear", objCliente);
-        }
-
-        public IActionResult Confirmacion()
-        {
-            return View();
         }
 
         public IActionResult ConfirmacionUpdate()
