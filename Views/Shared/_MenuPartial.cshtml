@@ -1,0 +1,12 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<ul class="navbar-nav">
+@if (SignInManager.IsSignedIn(User))
+{
+    <li class="nav-item">
+        <a class="nav-link text-white" style="font-size:20px;" asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a>
+    </li>
+}
+</ul>
