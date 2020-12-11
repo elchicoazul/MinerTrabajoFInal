@@ -204,3 +204,4 @@ C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\staticwebassets\M
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.dll
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.pdb
 C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\MinerTrabajoFInal.genruntimeconfig.cache
+C:\Users\PC_\Desktop\MinerTrabajoFInal\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_MenuPartial.cshtml.g.cs
