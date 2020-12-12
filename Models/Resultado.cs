@@ -11,6 +11,7 @@ namespace MinerTrabajoFInal.Models
         [Column("id")]
         public int Id  { get; set; }
         [Column("idcliente")]
+        [Display(Name="Nombre CLiente")]
         public int idcliente { get; set; }
         [Column("numerorecpcion")]
         public int numerorecpcion { get; set; }

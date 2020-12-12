@@ -1,17 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MinerTrabajoFInal</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar bd-navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container bg-info">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">MINERALAB</a>
+        <nav class=" transparent sticky-topnavbar bd-navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow scrolling">
+            <div class="bg-info transparent " style="width:100%; font-family:Metrophobic;">
+                
+                
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,27 +21,28 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="Index">Clientes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Resultado" asp-action="Index">Resultado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Recepcion" asp-action="Index">Recepcion</a>
+                        <li>
+                          <li class="nav-item">
+                            <a class="nav-link text-white"  asp-area="" asp-controller="Home" asp-action="Index"><img src="https://e7.pngegg.com/pngimages/953/836/png-clipart-crystal-mineral-solid-product-design-industry-crystal-icon-angle-hand.png"  class="img-thumbnail" height="50px" width="50px"></a>
                         </li>  
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" style="font-size:20px;" asp-area="" asp-controller="Home" asp-action="Index">MineraLab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" style="font-size:20px;" asp-area="" asp-controller="Recepcion" asp-action="Index">Recepcion</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link text-white" style="font-size:20px;" asp-area="" asp-controller="Resultado" asp-action="Index">Resultado</a>
+                        </li> 
+                        <partial name="_MenuPartial" />
                     </ul>
                 </div>
             </div>
         </nav>
+          
     </header>
-    <div class="container">
+    <div >
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

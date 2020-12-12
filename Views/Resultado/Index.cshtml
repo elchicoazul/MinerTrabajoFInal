@@ -1,12 +1,12 @@
 @model IEnumerable<MinerTrabajoFInal.Models.Resultado>
-@{
-    ViewData["Title"] = "Resultado";
-}
+
 
 <h1><center>RESULTADO</center></h1>
- <table class="table">
-      <input class="form-control"> 
+<form asp-controller="Resultado" asp-action="Buscar" method="post">
+ <table class="table table-bordered">
+      <input type="number" class="form-control"  name="valor"> 
       <button class="btn btn-primary"> Buscar </button>
+  </form>
       
     
   <thead class="thead-dark">
@@ -15,15 +15,18 @@
       <th scope="col">CLIENTE</th>
       <th scope="col">TIPO DE ANALISIS</th>
       <th scope="col">RESULTADO</th>
+      <th scope="col">EDITAR</th>
     </tr>
   </thead>
-  @foreach (var result in Model) 
+@foreach (var result in Model)
         {
-            <tr>
+          <tr>
                 <td>@Html.DisplayFor(modelItem => result.numerorecpcion)</td>
                 <td>@Html.DisplayFor(modelItem => result.idcliente)</td>
                 <td>@Html.DisplayFor(modelItem => result.tipo_analisis)</td>
-                <td>@Html.DisplayFor(modelItem => result.valor)</td>                
+                <td>@Html.DisplayFor(modelItem => result.valor)</td>
+                <td><a asp-action="Editar" asp-route-id="@result.numerorecpcion" class="badge badge-primary">Editar</a></td>                
             </tr>
+            
         }
 </table>
