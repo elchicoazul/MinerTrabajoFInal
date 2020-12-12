@@ -3,7 +3,7 @@
 <h2>Registros</h2><br>
 
 <p>
-    <a asp-action="Crear">Registrar</a>
+    <a class="btn btn-success" role="button" asp-action="Crear">Registrar</a>
 </p><br>
 
 <table class="table table-hover">
@@ -36,8 +36,8 @@
     {
         <tr>
             <th scope="row">
-                <a asp-action="Editar" asp-route-id="@item.id">Editar</a> |
-                <a asp-action="Delete" asp-route-id="@item.id">Delete</a>
+                <a asp-action="Editar" asp-route-id="@item.id" class="text-success">Editar</a> |
+                <a asp-action="Eliminar" asp-route-id="@item.id" class="text-success">Eliminar</a>
             </th>
             <td>
                 @Html.DisplayFor(modelItem => item.razonsocial)

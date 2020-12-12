@@ -1,4 +1,6 @@
 @model MinerTrabajoFInal.Models.Resultado
+
+
  
 @{
     ViewData["Title"] = "Recepcion";
@@ -6,19 +8,22 @@
 
 <div class="col-md-4">
     <h1 class="display-4">Lab Analisis</h1>
-   		<header>Recepcion Muestra</header>
-    </div>
+
+   		<p><header>Recepcion Muestra</header></p>
+    
 <body>  
 <form  asp-controller="Recepcion" asp-action="Registrar">
-         <div class="form-group">
-            Cliente: <input type="text" name="idcliente" size="30">
-            </div>
+<div class="form-group">
+                <label asp-for="idcliente" class="control-label"></label>
+                <select asp-for="idcliente">
+                <option value="1">Jorge  Antonio</option>
+                <option value="2">Jaime Uribe</option>
+                <option value="3">Roony  Condori</option>}
+</select>
+</div>
+         
+          <p>Numero de recepcion: <input type="text" name="numerorecpcion" size="10"></p>
 
-            <div class="form-group">
-           Numero de recepcion: <input type="text" name="numerorecpcion" size="10"><input id="submit" type="submit" value="Buscar">
-          </div>
-          <div class="form-group">
-          tipo de analisis:  <select name="tipo_analisis"> 
           
   <option value="AU"> Oro</option> 
   <option value="AG">Plata</option>

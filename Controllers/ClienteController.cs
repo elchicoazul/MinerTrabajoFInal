@@ -18,8 +18,8 @@ namespace MinerTrabajoFInal.Controllers
 
         public ClienteController(ILogger<ClienteController> logger, ApplicationDbContext context)
         {
-            _context = context;
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -35,13 +35,13 @@ namespace MinerTrabajoFInal.Controllers
             {
                 _context.Add(objCliente);
                 _context.SaveChanges();
-                return RedirectToAction("Confirmacion");
+                return RedirectToAction("Index");
 
             }
             return View("Crear", objCliente);
         }
 
-        public IActionResult Confirmacion()
+        public IActionResult ConfirmacionUpdate()
         {
             return View();
         }
@@ -92,12 +92,14 @@ namespace MinerTrabajoFInal.Controllers
             return View(objCliente);
         }
 
-        public IActionResult Delete(int? id)
+        public IActionResult Eliminar(int? id)
         {
             var contacto = _context.Clientes.Find(id);
             _context.Clientes.Remove(contacto);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
         }
+
+        
     }
 }

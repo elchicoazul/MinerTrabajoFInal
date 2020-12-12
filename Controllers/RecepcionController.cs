@@ -19,8 +19,9 @@ namespace MinerTrabajoFInal.Controllers
             _logger=logger;
             _context=context;
         }
-public IActionResult Index()
+        public IActionResult Index()
         {
+            
             return View();
         }
         [HttpPost]
@@ -30,10 +31,14 @@ public IActionResult Index()
             {
                 _context.Add(objRecepcion);
                 _context.SaveChanges();
-                return RedirectToAction("Validar");
+                return RedirectToAction("Confirmacion");
                //return View();
             }
             return View("Index", objRecepcion);
+        }
+          public IActionResult Confirmacion()
+        {
+            return View();
         }
  
     }
