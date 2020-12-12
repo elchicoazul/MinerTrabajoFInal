@@ -1,51 +1,63 @@
 @model MinerTrabajoFInal.Models.Resultado
 
-
- 
 @{
-    ViewData["Title"] = "Recepcion";
+    ViewData["Title"] = "Recepcion de Muestra";
 }
 
-<div class="col-md-4">
-    <h1 class="display-4">Lab Analisis</h1>
-
-   		<p><header>Recepcion Muestra</header></p>
-    
-<body>  
-<form  asp-controller="Recepcion" asp-action="Registrar">
-<div class="form-group">
+<div class="container">
+    <div class="col-md-4">  
+        <h3 >Recepcion de Muestra</h3>
+        <form  asp-controller="Recepcion" asp-action="Registrar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
                 <label asp-for="idcliente" class="control-label"></label>
-                <select asp-for="idcliente">
-                <option value="1">Jorge  Antonio</option>
-                <option value="2">Jaime Uribe</option>
-                <option value="3">Roony  Condori</option>}
-</select>
-</div>
-         
-          <p>Numero de recepcion: <input type="text" name="numerorecpcion" size="10"></p>
-
-          
-  <option value="AU"> Oro</option> 
+                <input asp-for="idcliente" class="form-control" />
+                <span asp-validation-for="idcliente" class="text-danger"></span>
+            </div>
+           
+            <div class="form-group">
+                <label asp-for="numerorecpcion" class="control-label"></label>
+                <input asp-for="numerorecpcion" class="form-control" />
+                <span asp-validation-for="numerorecpcion" class="text-danger"></span>
+            </div>
+             
+                   
+            <div class="form-group">
+                <label asp-for="tipo_analisis" class="control-label"></label>
+                <select asp-for="tipo_analisis">
+                <option value="AU"> Oro</option> 
   <option value="AG">Plata</option>
   <option value="CU">Cobre</option>
   <option value="PB">Plomo</option>
   <option value="ZN">Zinc</option>
-</select></div>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="muestra" class="control-label"></label>
+                <input asp-for="muestra" class="form-control" />
+                <span asp-validation-for="muestra" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                 <label asp-for="precio" class="control-label"></label>
+                <input asp-for="precio" class="form-control" />
+                <span asp-validation-for="precio" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               <label asp-for="cantidad" class="control-label"></label>
+                <input asp-for="cantidad" class="form-control" />
+                <span asp-validation-for="cantidad" class="text-danger"></span>
+            </div>
+                         
 
-  <div class="form-group">
-          Muestra: <input type="text" name="muestra" size="30">
-          </div>
+                       
 
-           <div class="form-group">
-          Precio: <input type="text" name="precio" size="30">
-          </div>
+            <div class="form-group">
+                 <button type="submit" class="btn btn-success">Registrar</button> 
+            </div>                
 
-          <div class="form-group">
-          Cantidad: <input type="text" name="cantidad" size="30">
-          </div>
-
-  <button type="submit" class="btn btn-default">Registrar</button> 
-  
-</form>
-</body>
+        </form>
+            
+          
+    
+    </div>
 </div>
