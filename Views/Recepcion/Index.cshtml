@@ -5,8 +5,10 @@
 @{
     ViewData["Title"] = "Recepcion";
 }
-<div class="text-center">
+
+<div class="col-md-4">
     <h1 class="display-4">Lab Analisis</h1>
+
    		<p><header>Recepcion Muestra</header></p>
     
 <body>  
@@ -21,17 +23,27 @@
 </div>
          
           <p>Numero de recepcion: <input type="text" name="numerorecpcion" size="10"></p>
+
           
-          <p>tipo de analisis:  <select name="tipo_analisis"> 
   <option value="AU"> Oro</option> 
   <option value="AG">Plata</option>
   <option value="CU">Cobre</option>
   <option value="PB">Plomo</option>
   <option value="ZN">Zinc</option>
-</select></p>
-          <p>Muestra: <input type="text" name="muestra" size="30"></p>
-          <p>Precio: <input type="text" name="precio" size="30"></p>
-          <p>Cantidad: <input type="text" name="cantidad" size="30"></p>
+</select></div>
+
+  <div class="form-group">
+          Muestra: <input type="text" name="muestra" size="30">
+          </div>
+
+           <div class="form-group">
+          Precio: <input type="text" name="precio" size="30">
+          </div>
+
+          <div class="form-group">
+          Cantidad: <input type="text" name="cantidad" size="30">
+          </div>
+
   <button type="submit" class="btn btn-default">Registrar</button> 
   
 </form>
