@@ -1,62 +1,65 @@
 @model IEnumerable<MinerTrabajoFInal.Models.Cliente>
 
-<h2>Registros</h2><br>
+<div class="container">
 
-<p>
-    <a class="btn btn-success" role="button" asp-action="Crear">Registrar</a>
-</p><br>
+    <h2>Registros</h2><br>
 
-<table class="table table-hover">
-    <thead class="thead-dark">
-        <tr>
-                <th scope="col">
-                    #
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.razonsocial)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.dni)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.direccion)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.telefono)
-                </th>
-                <th scope="col">
-                    @Html.DisplayNameFor(model => model.correo)
-                </th>
-        </tr>
-    </thead>
+    <p>
+        <a class="btn btn-success" role="button" asp-action="Crear">Registrar</a>
+    </p><br>
 
-    <tbody>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                    <th scope="col">
+                        #
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.razonsocial)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.dni)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.direccion)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.telefono)
+                    </th>
+                    <th scope="col">
+                        @Html.DisplayNameFor(model => model.correo)
+                    </th>
+            </tr>
+        </thead>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <th scope="row">
-                <a asp-action="Editar" asp-route-id="@item.id" class="text-success">Editar</a> |
-                <a asp-action="Eliminar" asp-route-id="@item.id" class="text-success">Eliminar</a>
-            </th>
-            <td>
-                @Html.DisplayFor(modelItem => item.razonsocial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.dni)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.direccion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.telefono)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.correo)
-            </td>
-        </tr>
-    }        
-    </tbody> 
+        <tbody>
 
-    
-</table>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th scope="row">
+                    <a asp-action="Editar" asp-route-id="@item.id" class="text-success">Editar</a> |
+                    <a asp-action="Eliminar" asp-route-id="@item.id" class="text-success" onclick="return confirm('Esta seguro que desea eliminar? : @item.id ')">Eliminar</a>
+                </th>
+                <td>
+                    @Html.DisplayFor(modelItem => item.razonsocial)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.dni)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.correo)
+                </td>
+            </tr>
+        }        
+        </tbody> 
+
+        
+    </table>
+</div>
