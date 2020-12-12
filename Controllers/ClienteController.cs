@@ -71,7 +71,7 @@ namespace MinerTrabajoFInal.Controllers
             return View(cliente);
         }
 
-        [HttpPost]
+       [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Editar(int id, [Bind("id,razonsocial,dni,direccion,telefono,correo")] Cliente objCliente)
         {   
@@ -95,7 +95,7 @@ namespace MinerTrabajoFInal.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View(objCliente);
-        }
+        }   
 
         public IActionResult Eliminar(int? id)
         {

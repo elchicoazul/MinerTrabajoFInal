@@ -1,0 +1,25 @@
+@model MinerTrabajoFInal.Models.Resultado
+
+@{
+    ViewData["Title"] = "recepcion";
+}
+<div class="row">
+    <div class="col-md-4">
+
+        <h1 class="display-4">Editar Valor</h1><br>
+
+        <form  asp-controller="Resultado" asp-action="Editar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group text-left">
+                <label  asp-for="valor" class="control-label"></label>
+                <input asp-for="valor" class="form-control"> 
+                <span asp-validation-for="valor" class="text-danger"></span>
+            </div><br>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Actualizar</button>
+            </div><br>
+        </form>
+    </div>
+</div>   

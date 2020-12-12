@@ -1692,19 +1692,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Frijai\\.nuget\\packages\\": {}
+    "C:\\Users\\Servidor\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\git\\Trabajo  Final\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "projectUniqueName": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
       "projectName": "MinerTrabajoFInal",
-      "projectPath": "D:\\git\\Trabajo  Final\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
-      "packagesPath": "C:\\Users\\Frijai\\.nuget\\packages\\",
-      "outputPath": "D:\\git\\Trabajo  Final\\MinerTrabajoFInal\\obj\\",
+      "projectPath": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\MinerTrabajoFInal.csproj",
+      "packagesPath": "C:\\Users\\Servidor\\.nuget\\packages\\",
+      "outputPath": "E:\\rony_usmp\\ProyectoFinal\\MinerTrabajoFInal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Frijai\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Servidor\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
