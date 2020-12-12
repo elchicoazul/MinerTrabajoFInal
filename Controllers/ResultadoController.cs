@@ -30,7 +30,10 @@ namespace MinerTrabajoFInal.Controllers
             //return View();
            
         }
-        /*
+
+
+
+        
         [HttpPost]        
         public IActionResult Buscar(int valor)
         {
@@ -39,7 +42,7 @@ namespace MinerTrabajoFInal.Controllers
             return View("index",resultado);
             //return View();
         }
-
+/*
         public ActionResult Editar(int id){
             return View(_context.Resultado.Where(s => s.numerorecpcion == id).First());
         }
