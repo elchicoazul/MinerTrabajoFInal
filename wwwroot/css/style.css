@@ -5,17 +5,27 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
  */
  
-  
+ 
   .carousel-item {
-    height: 65vh;
-    min-height: 300px;
+    height: 100vh;
+    min-height: 400px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-  
+  @media only screen and (max-width: 800px) {
+    .carousel-item {
+        height: 50vh;
+        min-height: 100px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+  }
   .portfolio-item {
     margin-bottom: 0px;
   }
