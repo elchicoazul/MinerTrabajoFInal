@@ -1,18 +1,18 @@
 @model IEnumerable<MinerTrabajoFInal.Models.Cliente>
 
+@{
+    var count = 1;
+}
+
 <div class="container">
-
-    <h2>Registros</h2><br>
-
-    <p>
-        <a class="btn btn-success" role="button" asp-action="Crear">Registrar</a>
-    </p><br>
-
-    <table class="table table-hover">
+    <br>
+    <h2>Registros</h2>
+    <a class="btn btn-success float-right" role="button" asp-action="Crear">Registrar</a><br>
+    <br><table class="table table-hover">
         <thead class="thead-dark">
             <tr>
                     <th scope="col">
-                        #
+                        №
                     </th>
                     <th scope="col">
                         @Html.DisplayNameFor(model => model.razonsocial)
@@ -26,7 +26,7 @@
                     <th scope="col">
                         @Html.DisplayNameFor(model => model.telefono)
                     </th>
-                    <th scope="col">
+                    <th scope="col" colspan="2">
                         @Html.DisplayNameFor(model => model.correo)
                     </th>
             </tr>
@@ -38,8 +38,7 @@
         {
             <tr>
                 <th scope="row">
-                    <a asp-action="Editar" asp-route-id="@item.id" class="text-success">Editar</a> |
-                    <a asp-action="Eliminar" asp-route-id="@item.id" class="text-success" onclick="return confirm('Esta seguro que desea eliminar? : @item.id ')">Eliminar</a>
+                    @count
                 </th>
                 <td>
                     @Html.DisplayFor(modelItem => item.razonsocial)
@@ -56,10 +55,13 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.correo)
                 </td>
+                <th scope="row">
+                    <a asp-action="Editar" asp-route-id="@item.id" class="btn btn-success active" role="button">Editar</a> 
+                    <a asp-action="Eliminar" asp-route-id="@item.id" class="btn btn-success active" role="button" onclick="return confirm('Esta seguro que desea eliminar? : @item.id ')">Eliminar</a>
+                </th>
             </tr>
+            count++;
         }        
         </tbody> 
-
-        
     </table>
 </div>
