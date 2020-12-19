@@ -9,41 +9,39 @@ using MinerTrabajoFInal.Data;
 
 namespace MinerTrabajoFInal.Controllers.Rest
 {
-    public class ApiCliente
+    [ApiController]
+    [Route("api/clientes")]
+    public class APIClienteController : ControllerBase
     {
-        [ApiController]
-        [Route("api/clientes")]
-        public class APIProductoController : ControllerBase
+       private readonly ILogger<APIClienteController> _logger;
+       private readonly ApplicationDbContext _context;
+
+        public APIClienteController(ILogger<APIClienteController> logger, ApplicationDbContext context)
         {
-            private readonly ILogger<APIProductoController> _logger;
-            private readonly ApplicationDbContext _context;
-
-            public APIProductoController(ILogger<APIProductoController> logger, ApplicationDbContext context)
-            {
-                _logger = logger;
-                _context = context;
-            }
-
-            [HttpGet]
-            public IEnumerable<Cliente> Get()
-            {
-                var listaClientes = _context.Clientes.OrderBy(s => s.id).ToList();   
-                return listaClientes.ToArray();
-            }
-            /*
-            [HttpGet("{id}")]
-            public Producto GetProduct(int? id)
-            {
-                var producto =  _context.Productos.Find(id);
-                return producto;
-            }
-
-            [HttpPost]
-            public Producto CreateProduct(Producto producto){
-                _context.Add(producto);
-                _context.SaveChanges();
-                return producto;
-            }*/
+            _logger = logger;
+            _context = context;
         }
+
+        [HttpGet]
+        public IEnumerable<Cliente> ListClientes()
+        {
+             var listClientes = _context.Clientes.OrderBy(s => s.id).ToList();   
+             return listClientes.ToArray();
+        }
+
+        [HttpGet("{id}")]
+        public Cliente GetClientes(int? id)
+        {
+            var cliente =  _context.Clientes.Find(id);
+            return cliente;
+        }
+
+        [HttpPost]
+        public Cliente CreateCliente(Cliente c){
+            _context.Add(c);
+            _context.SaveChanges();
+            return c;
+        }
+
     }
 }

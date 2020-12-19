@@ -1,0 +1,17 @@
+
+GET  https://localhost:5001/api/clientes/30 HTTP/1.1
+Accept: application/json
+
+GET  https://localhost:5001/api/clientes HTTP/1.1
+Accept: application/json
+
+POST https://localhost:5001/api/clientes HTTP/1.1
+Content-Type: application/json
+
+{
+    "razonsocial": "xd",
+    "dni": 777,
+    "direccion": "jr.xd",
+    "telefono": 941149,
+    "correo": "xd@xd"
+}
