@@ -85,7 +85,6 @@ namespace MinerTrabajoFInal.Controllers
                 catch (DbUpdateConcurrencyException)
                 {
                     return NotFound();
-                    
                 }
                 return RedirectToAction(nameof(Index));
             }
