@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MinerTrabajoFInal.Data;
 using MinerTrabajoFInal.Models;
+using System.Dynamic;
+
 
 namespace MinerTrabajoFInal.Controllers
 {
@@ -14,6 +16,8 @@ namespace MinerTrabajoFInal.Controllers
     {
         private readonly ILogger<RecepcionController> _logger;
         private readonly ApplicationDbContext _context;
+       
+ 
         public RecepcionController(ILogger<RecepcionController> logger, ApplicationDbContext context)
         {
             _logger=logger;
@@ -21,8 +25,18 @@ namespace MinerTrabajoFInal.Controllers
         }
         public IActionResult Index()
         {
-            
-            return View();
+               
+     var LisMuestras=_context.Muestras.ToList();
+     var LisClientes=_context.Clientes.ToList();
+     var resultados=_context.Resultado.ToList();
+            Resultado resultado = new Resultado();
+            dynamic model = new ExpandoObject();
+            model.r = resultado;
+            model.Muestras = LisMuestras;
+            model.cli=LisClientes;
+            model.res=resultados;
+            return View(model);
+               
         }
         [HttpPost]
         public IActionResult Registrar(Resultado objRecepcion)

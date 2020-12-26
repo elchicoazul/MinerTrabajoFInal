@@ -1,51 +1,64 @@
-@model MinerTrabajoFInal.Models.Resultado
-
+@model dynamic
 @{
     ViewData["Title"] = "Recepcion de Muestra";
+    Resultado rece= @Model.r;
 }
+
 
 <div class="container">
     <div class="col-md-5">  
         <h3 >Recepcion de Muestra</h3>
         <form  asp-controller="Recepcion" asp-action="Registrar">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="idcliente" class="control-label"></label>
-                <input asp-for="idcliente" class="form-control" />
-                <span asp-validation-for="idcliente" class="text-danger"></span>
+            
+             <div class="form-group">
+                <label asp-for="@rece.idcliente" class="control-label"></label>
+                <select asp-for="@rece.idcliente">
+                    
+                     @foreach (Cliente c in Model.cli)
+                {
+                   <option value="@c.id">@c.razonsocial</option>
+                }
+                
+  
+  
+                </select>
             </div>
            
             <div class="form-group">
-                <label asp-for="numerorecpcion" class="control-label"></label>
-                <input asp-for="numerorecpcion" class="form-control" />
-                <span asp-validation-for="numerorecpcion" class="text-danger"></span>
+                <label asp-for="@rece.numerorecpcion" class="control-label"></label>
+                <input asp-for="@rece.numerorecpcion" class="form-control" />
+                <span asp-validation-for="@rece.numerorecpcion" class="text-danger"></span>
             </div>
              
                    
             <div class="form-group">
-                <label asp-for="tipo_analisis" class="control-label"></label>
-                <select asp-for="tipo_analisis">
-                <option value="AU"> Oro</option> 
-  <option value="AG">Plata</option>
-  <option value="CU">Cobre</option>
-  <option value="PB">Plomo</option>
-  <option value="ZN">Zinc</option>
+                <label asp-for="@rece.tipo_analisis" class="control-label"></label>
+                <select asp-for="@rece.tipo_analisis">
+                    
+                     @foreach (Muestras m in Model.Muestras)
+                {
+                   <option value="@m.Muestra">@m.Muestra</option>
+                }
+                
+  
+  
                 </select>
             </div>
             <div class="form-group">
-                <label asp-for="muestra" class="control-label"></label>
-                <input asp-for="muestra" class="form-control" />
-                <span asp-validation-for="muestra" class="text-danger"></span>
+                <label asp-for="@rece.muestra" class="control-label"></label>
+                <input asp-for="@rece.muestra" class="form-control" />
+                <span asp-validation-for="@rece.muestra" class="text-danger"></span>
             </div>
             <div class="form-group">
-                 <label asp-for="precio" class="control-label"></label>
-                <input asp-for="precio" class="form-control" />
-                <span asp-validation-for="precio" class="text-danger"></span>
+                 <label asp-for="@rece.precio" class="control-label"></label>
+                <input asp-for="@rece.precio" class="form-control" />
+                <span asp-validation-for="@rece.precio" class="text-danger"></span>
             </div>
             <div class="form-group">
-               <label asp-for="cantidad" class="control-label"></label>
-                <input asp-for="cantidad" class="form-control" />
-                <span asp-validation-for="cantidad" class="text-danger"></span>
+               <label asp-for="@rece.cantidad" class="control-label"></label>
+                <input asp-for="@rece.cantidad" class="form-control" />
+                <span asp-validation-for="@rece.cantidad" class="text-danger"></span>
             </div>
                          
 
@@ -62,7 +75,25 @@
     </div>
    
 </div>
-  <div class="card-body">
-              <center><img src="https://www.espaciosdeoficina.es/var/espaciosdeoficina/storage/images/blog/ideas-para-decorar-la-recepcion-de-una-oficina/16833-28-esl-ES/Ideas-para-decorar-la-recepcion-de-una-oficina_w992_eo.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-           
-          </div>
+  <table class="table table-bordered">
+        
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">N°</th>
+      <th scope="col">CLIENTE</th>
+      <th scope="col">TIPO DE ANALISIS</th>
+     <th scope="col">EDITAR</th>
+    </tr>
+  </thead>
+  @foreach (Resultado r in Model.res)
+        {
+          <tr>
+                <td>@r.numerorecpcion</td>
+                <td>@r.idcliente</td>
+                <td>@r.tipo_analisis</td>
+              
+                                
+            </tr>
+            
+        }
+</table>
