@@ -1,0 +1,48 @@
+@model MinerTrabajoFInal.Models.Muestras
+
+@{
+    ViewData["Title"] = "Muestras";
+}
+
+    
+<div class="container">
+    <div class="col-md-4">
+
+        <h1 class="display-4">Muestra</h1><br>
+
+        <form  asp-controller="Muestras" asp-action="Registrar">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group text-left">
+                <label asp-for="Muestra" class="control-label"></label>
+                <input asp-for="Muestra" class="form-control"> 
+                <span asp-validation-for="Muestra" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-left">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control"> 
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group text-left">
+                <label asp-for="Img" class="control-label"></label>
+                <input asp-for="Img" class="form-control"> 
+                <span asp-validation-for="Img" class="text-danger"></span>
+            </div>
+
+            <div class="form-group text-left">
+                <label asp-for="Precio" class="control-label"></label>
+                <input asp-for="Precio" class="form-control"> 
+                <span asp-validation-for="Precio" class="text-danger"></span>
+            </div>
+
+            
+            
+           
+
+            <div class="form-group">
+                <button class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>

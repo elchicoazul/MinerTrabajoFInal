@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MinerTrabajoFInal.Models
 {
-    [Table("clientes")]    
+    [Table("T_clientes")]    
     public class Cliente
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

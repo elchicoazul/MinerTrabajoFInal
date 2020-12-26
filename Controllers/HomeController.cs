@@ -6,21 +6,28 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MinerTrabajoFInal.Models;
+using MinerTrabajoFInal.Data;
+
 
 namespace MinerTrabajoFInal.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+private readonly ApplicationDbContext _context;
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
+
+
 
         public IActionResult Index()
         {
-            return View();
+            var lista = _context.Muestras.ToList();
+            return View(lista);
+            
         }
 
         public IActionResult Privacy()

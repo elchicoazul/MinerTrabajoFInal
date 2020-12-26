@@ -48,6 +48,58 @@ namespace MinerTrabajoFInal.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "T_clientes",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    razonsocial = table.Column<string>(nullable: false),
+                    dni = table.Column<int>(nullable: false),
+                    direccion = table.Column<string>(nullable: false),
+                    telefono = table.Column<int>(nullable: false),
+                    correo = table.Column<string>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_T_clientes", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "T_Muestras",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    Muestra = table.Column<string>(nullable: true),
+                    Descripcion = table.Column<string>(nullable: true),
+                    Img = table.Column<string>(nullable: true),
+                    Precio = table.Column<double>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_T_Muestras", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "T_recepcion",
+                columns: table => new
+                {
+                    id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
+                    idcliente = table.Column<int>(nullable: false),
+                    numerorecpcion = table.Column<int>(nullable: false),
+                    tipo_analisis = table.Column<string>(nullable: true),
+                    muestra = table.Column<string>(nullable: false),
+                    precio = table.Column<double>(nullable: false),
+                    cantidad = table.Column<int>(nullable: false),
+                    valor = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_T_recepcion", x => x.id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "AspNetRoleClaims",
                 columns: table => new
                 {
@@ -207,6 +259,15 @@ namespace MinerTrabajoFInal.Data.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "T_clientes");
+
+            migrationBuilder.DropTable(
+                name: "T_Muestras");
+
+            migrationBuilder.DropTable(
+                name: "T_recepcion");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

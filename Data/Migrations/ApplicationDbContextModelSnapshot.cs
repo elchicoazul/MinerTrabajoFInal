@@ -217,6 +217,113 @@ namespace MinerTrabajoFInal.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("MinerTrabajoFInal.Models.Cliente", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id")
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("correo")
+                        .IsRequired()
+                        .HasColumnName("correo")
+                        .HasColumnType("text");
+
+                    b.Property<string>("direccion")
+                        .IsRequired()
+                        .HasColumnName("direccion")
+                        .HasColumnType("text");
+
+                    b.Property<int>("dni")
+                        .HasColumnName("dni")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("razonsocial")
+                        .IsRequired()
+                        .HasColumnName("razonsocial")
+                        .HasColumnType("text");
+
+                    b.Property<int>("telefono")
+                        .HasColumnName("telefono")
+                        .HasColumnType("integer");
+
+                    b.HasKey("id");
+
+                    b.ToTable("T_clientes");
+                });
+
+            modelBuilder.Entity("MinerTrabajoFInal.Models.Muestras", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id")
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<string>("Descripcion")
+                        .HasColumnName("Descripcion")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Img")
+                        .HasColumnName("Img")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Muestra")
+                        .HasColumnName("Muestra")
+                        .HasColumnType("text");
+
+                    b.Property<double>("Precio")
+                        .HasColumnName("Precio")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_Muestras");
+                });
+
+            modelBuilder.Entity("MinerTrabajoFInal.Models.Resultado", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("id")
+                        .HasColumnType("integer")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
+
+                    b.Property<int>("cantidad")
+                        .HasColumnName("cantidad")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("idcliente")
+                        .HasColumnName("idcliente")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("muestra")
+                        .IsRequired()
+                        .HasColumnName("muestra")
+                        .HasColumnType("text");
+
+                    b.Property<int>("numerorecpcion")
+                        .HasColumnName("numerorecpcion")
+                        .HasColumnType("integer");
+
+                    b.Property<double>("precio")
+                        .HasColumnName("precio")
+                        .HasColumnType("double precision");
+
+                    b.Property<string>("tipo_analisis")
+                        .HasColumnName("tipo_analisis")
+                        .HasColumnType("text");
+
+                    b.Property<string>("valor")
+                        .HasColumnName("valor")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("T_recepcion");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
