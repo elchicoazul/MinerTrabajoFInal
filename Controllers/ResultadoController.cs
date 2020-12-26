@@ -25,7 +25,6 @@ namespace MinerTrabajoFInal.Controllers
             var resultado=_context.Resultado.ToList();
             return View(resultado);
             //return View();
-           
         }
         [HttpPost]        
         public IActionResult Buscar(int valor)

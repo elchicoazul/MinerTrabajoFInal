@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<MinerTrabajoFInal.Models.Muestras>
+@{
     ViewData["Title"] = "Home Page";
 }
 <header>
@@ -43,77 +44,21 @@
   </header>
  
 <div class="row m-5 pb-5">
+   @foreach (var item in Model)
+        {
     <div class="col-lg-4 mb-4">
         <div class="card h-100">
-          <h4 class="card-header text-center">ORO</h4>
+          <h4 class="card-header text-center">@Html.DisplayFor(modelItem => item.Muestra)</h4>
           <div class="card-body">
-              <center><img src="https://cdn.forbes.com.mx/2018/08/oro-reuters.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">El oro es un elemento químico cuyo número atómico es 79. Está ubicado en el grupo 11 de la tabla periódica. Es un metal precioso blando de color dorado.</p>
+              <center><img src="@Html.DisplayFor(modelItem => item.Img)" alt="" width="300" height="200" class="rounded-lg "></center>
+            <p class="card-text">@Html.DisplayFor(modelItem => item.Descripcion)</p>
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
+            <a href="#" class="btn btn-success btn-sm btn-block">@Html.DisplayFor(modelItem => item.Precio)</a>
           </div>
         </div>
       </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header text-center">PLATA</h4>
-          <div class="card-body">
-              <center><img src="https://www.infometales.com/wp-content/uploads/2019/11/Plata-Top-e1582224021407.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">La plata es un elemento químico de número atómico 47 situado en el grupo 11 de la tabla periódica de los elementos. Su símbolo es Ag. Es un metal de transición de color plateado, brillante, blando, dúctil y maleable. En la naturaleza se encuentra como parte de distintos minerales o como plata libre</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header text-center">PLOMO</h4>
-          <div class="card-body">
-              <center><img src="https://okdiario.com/img/2017/03/31/caracteristicas-del-plomo-2.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">El plomo es un elemento químico de la tabla periódica, cuyo símbolo es Pb y su número atómico es 82 según la tabla actual, ya que no formaba parte en la tabla periódica de Mendeléyev. Este químico no lo reconocía como un elemento metálico común por su gran elasticidad molecular</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header text-center">ORO</h4>
-          <div class="card-body">
-              <center><img src="https://cdn.forbes.com.mx/2018/08/oro-reuters.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">El oro es un elemento químico cuyo número atómico es 79. Está ubicado en el grupo 11 de la tabla periódica. Es un metal precioso blando de color dorado.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
-          </div>
-        </div>
-      </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header text-center">PLATA</h4>
-          <div class="card-body">
-              <center><img src="https://www.infometales.com/wp-content/uploads/2019/11/Plata-Top-e1582224021407.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">La plata es un elemento químico de número atómico 47 situado en el grupo 11 de la tabla periódica de los elementos. Su símbolo es Ag. Es un metal de transición de color plateado, brillante, blando, dúctil y maleable. En la naturaleza se encuentra como parte de distintos minerales o como plata libre</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
-          </div>
-        </div>
-    </div>
-    <div class="col-lg-4 mb-4">
-        <div class="card h-100">
-          <h4 class="card-header text-center">PLOMO</h4>
-          <div class="card-body">
-              <center><img src="https://okdiario.com/img/2017/03/31/caracteristicas-del-plomo-2.jpg" alt="" width="300" height="200" class="rounded-lg "></center>
-            <p class="card-text">El plomo es un elemento químico de la tabla periódica, cuyo símbolo es Pb y su número atómico es 82 según la tabla actual, ya que no formaba parte en la tabla periódica de Mendeléyev. Este químico no lo reconocía como un elemento metálico común por su gran elasticidad molecular</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-success btn-sm btn-block">Preguntar</a>
-          </div>
-        </div>
-    </div>
-    
-</div>
+    }
+  </div>
+
