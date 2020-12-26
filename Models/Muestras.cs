@@ -19,11 +19,11 @@ namespace MinerTrabajoFInal.Models
         [Display(Name="Descripcion")]
         public string Descripcion { get; set; }
         
-         [Column("Img")]
+        [Column("Img")]
         [Display(Name="Img")]
         public string Img { get; set; }
         
-         [Column("Precio")]
+        [Column("Precio")]
         [Display(Name="Precio")]
         public double Precio { get; set; }
     }

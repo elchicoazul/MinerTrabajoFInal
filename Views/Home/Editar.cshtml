@@ -1,16 +1,13 @@
 @model MinerTrabajoFInal.Models.Muestras
 
 @{
-    ViewData["Title"] = "Muestras";
+    ViewData["Title"] = "Editar Muestras";
 }
 
-    
 <div class="container">
     <div class="col-md-4">
-
-        <h1 class="display-4">Muestra</h1><br>
-
-        <form  asp-controller="Muestras" asp-action="Registrar">
+        <h1 class="display-4">Editar</h1><br>
+        <form asp-action="Editar">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group text-left">
                 <label asp-for="Muestra" class="control-label"></label>
@@ -27,14 +24,13 @@
                 <input asp-for="Img" class="form-control"> 
                 <span asp-validation-for="Img" class="text-danger"></span>
             </div>
-
             <div class="form-group text-left">
                 <label asp-for="Precio" class="control-label"></label>
                 <input asp-for="Precio" class="form-control"> 
                 <span asp-validation-for="Precio" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <button class="btn btn-success">Registrar</button>
+                <button class="btn btn-success">Actualizar</button>
             </div>
         </form>
     </div>
