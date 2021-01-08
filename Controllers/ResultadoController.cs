@@ -54,23 +54,9 @@ namespace MinerTrabajoFInal.Controllers
         }
 
 
-/*         public async Task<IActionResult> Editar(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var result = await _context.Resultado.FindAsync(id);
-            if (result == null)
-            {
-                return NotFound();
-            }
-            return View(result);
-        }*/
          [HttpPost]
         [ValidateAntiForgeryToken]        
-        public async Task<IActionResult> Editar(int id, [Bind("Id,idcliente,numerorecpcion,tipo_analisis,muestra,precio,cantidad,valor")] Resultado res)
+        public async Task<IActionResult> Editar(int id, [Bind("Id,idcliente,numerorecpcion,tipo_analisis,Envoltura,precio,cantidad,valor")] Resultado res)
         {   
             if (id != res.Id)
             {
@@ -92,43 +78,6 @@ namespace MinerTrabajoFInal.Controllers
             }
             return View(res);
         }
-        /*
-         public async Task<IActionResult> Editar(int? id)
-        {
-            var resultado = await _context.Resultado.FindAsync(id);
-            
-            if (resultado == null)
-            {
-                return NotFound();
-            }
-            return View();
-        }
-        */
-        /*
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Editar(int id, [Bind("valor")] Resultado objCliente)
-        {   
-            if (id != objCliente.numerorecpcion)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(objCliente);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    return NotFound();
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(objCliente);
-        }
-        */
+        
     }
 }
