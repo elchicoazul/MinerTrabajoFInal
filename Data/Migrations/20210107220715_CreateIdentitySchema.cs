@@ -89,7 +89,7 @@ namespace MinerTrabajoFInal.Data.Migrations
                     idcliente = table.Column<int>(nullable: false),
                     numerorecpcion = table.Column<int>(nullable: false),
                     tipo_analisis = table.Column<string>(nullable: true),
-                    muestra = table.Column<string>(nullable: false),
+                    Envoltura = table.Column<string>(nullable: false),
                     precio = table.Column<double>(nullable: false),
                     cantidad = table.Column<int>(nullable: false),
                     valor = table.Column<string>(nullable: true)

@@ -10,6 +10,7 @@ using MinerTrabajoFInal.Models;
 using System.Dynamic;
 
 
+
 namespace MinerTrabajoFInal.Controllers
 {
     public class RecepcionController : Controller
@@ -28,27 +29,34 @@ namespace MinerTrabajoFInal.Controllers
                
      var LisMuestras=_context.Muestras.ToList();
      var LisClientes=_context.Clientes.ToList();
-     var resultados=_context.Resultado.ToList();
             Resultado resultado = new Resultado();
             dynamic model = new ExpandoObject();
             model.r = resultado;
             model.Muestras = LisMuestras;
             model.cli=LisClientes;
-            model.res=resultados;
+          
             return View(model);
                
         }
         [HttpPost]
-        public IActionResult Registrar(Resultado objRecepcion)
+        public IActionResult Registrar(int idcliente, int numerorecpcion,string tipo_analisis, string Envoltura, double precio,int cantidad)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Add(objRecepcion);
+        
+           Resultado res = new Resultado();
+           res.idcliente=idcliente;
+           res.numerorecpcion=numerorecpcion;
+           res.tipo_analisis=tipo_analisis;
+           res.Envoltura=Envoltura;
+           res.precio=precio;
+           res.cantidad=cantidad;
+
+               _context.Add(res);
+            
                 _context.SaveChanges();
                 return RedirectToAction("Confirmacion");
                //return View();
-            }
-            return View("Index", objRecepcion);
+            
+           
         }
           public IActionResult Confirmacion()
         {

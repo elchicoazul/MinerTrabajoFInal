@@ -20,10 +20,10 @@ namespace MinerTrabajoFInal.Models
         [Column("tipo_analisis")]
         [Display(Name="Tipo de Analisis")]
         public string tipo_analisis  { get; set; }
-        [Required(ErrorMessage = "Por favor ingrese una muestra")]         
-        [Column("muestra")]
-        [Display(Name="Muestra")]
-        public string muestra  { get; set; }
+                
+        [Column("Envoltura")]
+        [Display(Name="Envoltura")]
+        public string Envoltura  { get; set; }
         [Required(ErrorMessage = "Por favor ingrese un precio")] 
         [Column("precio")]
         [Display(Name="Precio")]

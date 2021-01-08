@@ -290,6 +290,11 @@ namespace MinerTrabajoFInal.Data.Migrations
                         .HasColumnType("integer")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn);
 
+                    b.Property<string>("Envoltura")
+                        .IsRequired()
+                        .HasColumnName("Envoltura")
+                        .HasColumnType("text");
+
                     b.Property<int>("cantidad")
                         .HasColumnName("cantidad")
                         .HasColumnType("integer");
@@ -297,11 +302,6 @@ namespace MinerTrabajoFInal.Data.Migrations
                     b.Property<int>("idcliente")
                         .HasColumnName("idcliente")
                         .HasColumnType("integer");
-
-                    b.Property<string>("muestra")
-                        .IsRequired()
-                        .HasColumnName("muestra")
-                        .HasColumnType("text");
 
                     b.Property<int>("numerorecpcion")
                         .HasColumnName("numerorecpcion")

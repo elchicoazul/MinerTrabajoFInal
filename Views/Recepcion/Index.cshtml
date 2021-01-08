@@ -1,19 +1,20 @@
 @model dynamic
 @{
     ViewData["Title"] = "Recepcion de Muestra";
-    Resultado rece= @Model.r;
+    Resultado rece= new Resultado();
+   
 }
 
 
 <div class="container">
     <div class="col-md-5">  
         <h3 >Recepcion de Muestra</h3>
-        <form  asp-controller="Recepcion" asp-action="Registrar">
+        <form  asp-controller="Recepcion" asp-action="Registrar" >
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             
              <div class="form-group">
                 <label asp-for="@rece.idcliente" class="control-label"></label>
-                <select asp-for="@rece.idcliente">
+                <select name="idcliente">
                     
                      @foreach (Cliente c in Model.cli)
                 {
@@ -27,14 +28,14 @@
            
             <div class="form-group">
                 <label asp-for="@rece.numerorecpcion" class="control-label"></label>
-                <input asp-for="@rece.numerorecpcion" class="form-control" />
+                <input name="numerorecpcion" class="form-control" />
                 <span asp-validation-for="@rece.numerorecpcion" class="text-danger"></span>
             </div>
              
                    
             <div class="form-group">
                 <label asp-for="@rece.tipo_analisis" class="control-label"></label>
-                <select asp-for="@rece.tipo_analisis">
+                <select name="tipo_analisis">
                     
                      @foreach (Muestras m in Model.Muestras)
                 {
@@ -46,18 +47,18 @@
                 </select>
             </div>
             <div class="form-group">
-                <label asp-for="@rece.muestra" class="control-label"></label>
-                <input asp-for="@rece.muestra" class="form-control" />
-                <span asp-validation-for="@rece.muestra" class="text-danger"></span>
+                <label asp-for="@rece.Envoltura" class="control-label"></label>
+                <input name="Envoltura" class="form-control" />
+                <span asp-validation-for="@rece.Envoltura" class="text-danger"></span>
             </div>
             <div class="form-group">
                  <label asp-for="@rece.precio" class="control-label"></label>
-                <input asp-for="@rece.precio" class="form-control" />
+                <input name="precio" class="form-control" />
                 <span asp-validation-for="@rece.precio" class="text-danger"></span>
             </div>
             <div class="form-group">
                <label asp-for="@rece.cantidad" class="control-label"></label>
-                <input asp-for="@rece.cantidad" class="form-control" />
+                <input name="cantidad" class="form-control" />
                 <span asp-validation-for="@rece.cantidad" class="text-danger"></span>
             </div>
                          
@@ -75,25 +76,4 @@
     </div>
    
 </div>
-  <table class="table table-bordered">
-        
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">N°</th>
-      <th scope="col">CLIENTE</th>
-      <th scope="col">TIPO DE ANALISIS</th>
-     <th scope="col">EDITAR</th>
-    </tr>
-  </thead>
-  @foreach (Resultado r in Model.res)
-        {
-          <tr>
-                <td>@r.numerorecpcion</td>
-                <td>@r.idcliente</td>
-                <td>@r.tipo_analisis</td>
-              
-                                
-            </tr>
-            
-        }
-</table>
+
